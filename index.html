@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Библиотека</title>
+</head>
+
+<body>
+
+
+    <div id="tabs-div">
+        <div id="tabs-name">
+            <div class="tab-name"><a href="#books-container" class="tab-a">Books</a></div>
+            <div class="tab-name"><a href="#users-container" class="tab-a"">Users</a></div>
+            <div class=" tab-name"><a href="#contacts-container" class="tab-a">Contacts</a></div>
+        </div>
+    </div>
+
+    <div id="books-container" class="tab-content">
+        <h1>Все книги</h1>
+        <button type="button" id="book-btn" class="all-btns">Добавить книгу</button>
+
+        <div id="books-list" class="listCont"></div>
+
+        <div id="modal-books" class="modal-all">
+            <div id="modal-books_block" class="modal-block">
+                <span>Название</span>
+                <input type="text" id="name-book" class="book">
+                <span>Автор</span>
+                <input type="text" id="author-book" class="book">
+                <span>Страницы</span>
+                <input type="number" id="page-book" class="book">
+                <span>Количество</span>
+                <input type="number" id="count-book" class="book">
+
+                <div class="err">Заполните все поля</div>
+
+                <button type="button" id="book-btn-modal" class="all-btns">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="users-container" class="tab-content">
+        <h1>Все пользователи</h1>
+        <button type="button" id="user-btn" class="all-btns">Добавить пользователя</button>
+
+        <div id="users-list" class="listCont"></div>
+        <div id="change-user" class="modal-all">
+            <div class="modal-block">
+                <span>Имя пользователя</span>
+                <input type="text" id="change-name-user">
+                <span>Телефон</span>
+                <input type="tel" id="change-tel-user">
+
+                <button type="button" id="change-save-btn" class="all-btns">Сохранить пользователя</button>
+                <button type="button" id="change-del-btn" class="all-btns">Удалить пользователя</button>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="modal-users" class="modal-all">
+            <div id="modal-users_block" class="modal-block">
+                <span>Имя пользователя</span>
+                <input type="text" id="name-user" class="user">
+                <span>Телефон</span>
+                <input type="tel" id="tel-user" class="user">
+
+                <div class="err">Заполните все поля</div>
+
+                <button type="button" id="user-btn-modal" class="all-btns">Сохранить изменения</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="contacts-container" class="tab-content">
+        <button type="button" id="contacts-btn" class="all-btns">Добавить карту-пользователя</button>
+
+        <div id="contacts-list"></div>
+
+        <div id="modal-contacts" class="modal-all">
+            <div id="modal-contacts_block" class="modal-block">
+                <span>Имя пользователя</span>
+                <div id="select-container-user"></div>
+                <span>Название книги</span>
+                <div id="select-container-book"></div>
+
+                <button type="button" id="contacts-btn-modal" class="all-btns">Добавить</button>
+            </div>
+        </div>
+
+        <div id="contacts-table-cont">
+            <table id="contacts-table">
+                <thead>
+                    <tr>
+                        <th>Пользователь</th>
+                        <th>Книга</th>
+                        <th>Дата получения</th>
+                        <th>Дата возвращения</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
+

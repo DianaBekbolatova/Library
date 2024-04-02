@@ -1,0 +1,169 @@
+/* на все тело */
+body {
+    background: radial-gradient(circle, rgba(174, 238, 230, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* на табы */
+#tabs-name {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-name {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tab-a {
+    text-decoration: none;
+}
+
+.tab-a:hover {
+    color: rgb(0, 51, 255);
+    text-decoration: overline;
+}
+
+
+/* на модалки */
+.modal-all {
+    background-color: rgb(228, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+.modal-block {
+    background-color: rgb(66, 169, 169);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(8, 66, 65);
+    border-radius: 10px;
+
+}
+
+#modal-users_block {
+    width: 250px;
+    height: 200px;
+}
+
+.modal-block span {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(61, 61, 217);
+    margin-bottom: 5px;
+}
+
+.modal-block input {
+    background-color: rgb(61, 61, 217);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* на кнопки */
+.all-btns {
+    background-color: rgb(61, 61, 217);
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 7px;
+    margin: 6px 6px;
+}
+
+.all-btns:hover {
+    box-shadow: 0 0 20px white;
+    padding: 9px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* блок подробнее и */
+.list {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(168, 225, 225);
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listMore {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(9, 108, 122);
+}
+
+.listCont {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* на ошибку при заполнении*/
+.err {
+    color: red;
+    margin: 7px;
+    display: none;
+}
+
+#change-user {
+    display: none;
+}
+
+/* 3 */
+
+#select-container-book select,
+#select-container-user select {
+    width: 150px;
+    padding: 6px;
+    background-color: rgb(61, 61, 217);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+#contacts-table {
+    width: 100%;
+
+}
+
+#contacts-table th,
+#contacts-table td {
+    border: 1px solid #1d36c7;
+    padding: 8px;
+    text-align: left;
+}
+
+#contacts-table th {
+    background-color: rgb(0, 51, 255)
+}
+
